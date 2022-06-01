@@ -1,0 +1,52 @@
+body {
+	font-family: monospace;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+button {
+	background-color: none;
+	border: none;
+	font-size: 1rem;
+	font-family: inherit;
+	display: inline-block;
+	padding: 0.5em 1em;
+	border: 1px solid black;
+	margin-bottom: 1em;
+}
+
+.controls {
+	max-width: 1000px;
+	margin: 2rem auto;
+	text-align: center;
+}
+
+text {
+	color: white;
+	font-size: 40px;
+}
+
+#circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: palegoldenrod;
+	margin-top: 4em;
+}
+
+/* .cheese {
+	padding: 3em;
+	background-color: yellow;
+	background-image: radial-gradient(black 1px, transparent 0);
+} */
+
+#path {
+	margin-top: 4em;
+	position: relative;
+	height: 70px;
+	width: 600px;
+	background: #e0efef;
+}
