@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs</title>
+</head>
+<body>
+ <div class="container">
+    <h1>DevHaus Story</h1> 
+</body>
+<script>
+  // We wanna ask 3 questions
+  // 1st: privide an adjective
+  // 2nd: provide a verb that doesnt end in -ing
+  // 3rd: provide a noun
+  // Alert the user that we put in all the information and gonna construct the sentence
+  // print the sentence to the screen
+
+
+  // Tasks:
+  // kepp track of how many questions are remaining
+  // ask the appropritate question at the right time
+  // when all questions are entered construct the sentence
+  // alert the user that the senctence gets constructed
+  // write the sentence to the screen
+
+
+// let answers = []; 
+
+
+// while (answers.length < 3){
+//     if (answers.length == 0){
+//         answers.push(prompt('write a adjective'))
+//     }
+//     else if (answers.length == 1){
+//         answers.push(prompt('write a verb'))
+//     }
+//     else if (answers.length == 2){
+//         answers.push(prompt('write a noun'))
+//     }
+// }   
+// document.write(
+//     `Dear ${answers[0]} human, please kindly take the ${answers[2]} for a ${answers[1]}.` 
+//         );
+
+
+
+
+let answers = []; 
+
+function ValueIsNull (element, index, array) {
+    return element == null;
+};
+
+
+while (answers.length < 3){
+if (answers.some(ValueIsNull)) {
+    window.alert("Bad Kitty");
+    answers.pop();
+}
+else {
+
+if (answers.length == 0){
+answers.push(prompt('write a adjective'))
+}
+else if (answers.length == 1){
+answers.push(prompt('write a verb'))
+}
+else if (answers.length == 2){
+answers.push(prompt('write a noun'))
+}
+}
+}
+document.write(
+Dear ${answers[0]} human, please kindly take the ${answers[1]} for a ${answers[2]}. 
+);
+</script>
+</html>
